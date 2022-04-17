@@ -8,15 +8,19 @@
 
 int _printf(const char *format, ...)
 {
-    int count = 0;
-    va_list list;
-    char *pointer, *start;
-    param_func flags = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    int count = -1;
 
-    va_start(list, format);
+	if (format != NULL)
+	{
+		int i;
+		va_list ar_list;
+		int (*o)(va_list);
 
-    if (!format || (format[0] == '%' && !format[1]))
-      return (-1);
-    if (format[0] == '%' && format[1] == ' ' && !format[2])
-      return (-1);
+		va_start(ar_list, format);
+
+		if (format[0] == '%' && format[1] == '\0')
+			return (-1);
+
+		count = 0;
+    }
 }
