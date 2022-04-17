@@ -1,3 +1,11 @@
+#include "main.h"
+
+/**
+ *_printf - Print a formatted string
+ *@format: format string
+ *Return: number of characters printed
+ */
+
 int _printf(const char *format, ...)
 {
     int count = 0;
