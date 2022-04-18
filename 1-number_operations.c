@@ -5,7 +5,6 @@
 * @ar_list: Store the value of arguments
 * Return: Counter print numbers
 */
-
 int print_d(va_list ar_list)
 {
 	unsigned int num_Absolute, aux_Num, count_Zero, count;
@@ -38,7 +37,6 @@ int print_d(va_list ar_list)
 	}
 	return (count);
 }
-
 /**
 * print_i - Print the integers (%i)
 * @ar_list: Store list numbers
