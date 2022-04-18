@@ -1,14 +1,12 @@
 #include "main.h"
-
 /**
- *_printf - Print a formatted string
- *@format: format string
- *Return: number of characters printed
- */
-
+* _printf - main function to print in console
+* @format: array to print and check type
+* Return: count of character printed
+**/
 int _printf(const char *format, ...)
 {
-    int count = -1;
+	int count = -1;
 
 	if (format != NULL)
 	{
@@ -22,8 +20,8 @@ int _printf(const char *format, ...)
 			return (-1);
 
 		count = 0;
-	
-	        for (i = 0; format[i] != '\0'; i++)
+
+		for (i = 0; format[i] != '\0'; i++)
 		{
 			if (format[i] == '%')
 			{
@@ -47,4 +45,3 @@ int _printf(const char *format, ...)
 
 	return (count);
 }
-   
