@@ -38,4 +38,4 @@ int print_b(va_list binary_list)
 	}
 	return (count);
 }
-binary
+
