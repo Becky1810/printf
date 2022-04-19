@@ -32,5 +32,3 @@ int print_x(va_list ar_list);
 int print_X(va_list ar_list);
 
 #endif
-
-banana
